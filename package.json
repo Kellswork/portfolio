@@ -2,7 +2,7 @@
   "name": "portfolio-website-gatsby",
   "description": "Portfolio website built in Gatsby",
   "version": "1.0.0",
-  "author": "Milos Lekovic <milos085@gmail.com>",
+  "author": "Kelechi Ogbonna <kellogbonna@gmail.com>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.8.0",
     "gatsby": "^2.0.40",
@@ -44,6 +44,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/Kellswork/portfolio"
   }
 }
