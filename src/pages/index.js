@@ -182,7 +182,7 @@ class Homepage extends React.Component {
                   Built with: React, Redux, Netlify, Git, Ant-Design System, Jest, TravisCI, Postgres (Knex) and Node
                 </t.P>
                 <LinkButton primary bold className="link" as="a" target="_blank" href="https://www.befittracker.com">
-                  Lorem ipsum
+                  Learn more
                 </LinkButton>
               </DivWrapper>
             </BlockContent>
@@ -205,7 +205,7 @@ class Homepage extends React.Component {
                   target="_blank"
                   href="https://politico-kell.herokuapp.com/"
                 >
-                  Lorem ipsum
+                  Learn more
                 </LinkButton>
               </DivWrapper>
               <DivWrapper>
@@ -227,7 +227,7 @@ class Homepage extends React.Component {
                 </t.P>
                 <t.P> Built with: HTML, CSS, Javascript</t.P>
                 <LinkButton primary bold className="link" as="a" target="_blank" href="https://ceplanner.netlify.com/">
-                  Lorem ipsum
+                  Learn more
                 </LinkButton>
               </DivWrapper>
             </BlockContent>
@@ -249,7 +249,7 @@ class Homepage extends React.Component {
                   target="_blank"
                   href="https://kellswork.github.io/SendIT/"
                 >
-                  Lorem ipsum
+                  Learn more
                 </LinkButton>
               </DivWrapper>
               <DivWrapper>
