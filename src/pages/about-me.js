@@ -52,6 +52,7 @@ const AboutMeWrapper = styled.div`
   .avatar {
     max-width: 400px;
     width: 80%;
+    height: 400px;
     margin: 0 auto 100px auto;
     border-radius: 50%;
     display: block;
@@ -84,10 +85,16 @@ class AboutMe extends React.Component {
         <Layout theme="white" openContactPopup={this.openContactPopup}>
           <AboveFold>
             <t.H1 green align="center">
-              Name Surname - Lorem ipsum
+              Kelechi Ogbonna - About Me
             </t.H1>
             <t.LargeP align="center" max70>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              I enjoy the challenge that come with fixing bugs and looking for a solution to a problem someone needs.
+              Programing is a mind game I will continue to indulge in. Building software technologies and buildoing the
+              web is a pasiion I do not think i will be looing anytime soon. With a great love for working in diverse
+              team, building relationship s with fellow tema members, collaborating and communicating effectively while
+              mutally respecting each other is the part I always look for to. When not being an awesome engineer, you
+              can find me listening to music why reading a book on self motivation aor attending tech conferences to
+              meet and hear form great minds
             </t.LargeP>
           </AboveFold>
           <Content>

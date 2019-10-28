@@ -3,7 +3,10 @@ import styled from 'styled-components';
 import * as Mixins from '../Mixins';
 import * as t from '../Typography';
 import Layout, { Content } from '../components/Layout';
-import Placeholder from '../images/placeholder.png';
+import BeFit from '../images/befit.png';
+import politico from '../images/politico.png';
+import sendit from '../images/sendit.png';
+import ceplanner from '../images/ceplanner.png';
 import { HireMe, LinkButton } from '../components/Button.js';
 import HireMePopup from '../components/HireMePopup.js';
 import { media } from '../MediaQueries';
@@ -79,8 +82,8 @@ const HomepageWrapper = styled.div`
     margin: 0 0 20px 0;
   }
   .avatar {
-    max-width: 200px;
-    width: 80%;
+    width: 300px;
+    height: 300px;
     margin: 0 auto 50px auto;
     border-radius: 50%;
     display: block;
@@ -146,10 +149,10 @@ class Homepage extends React.Component {
           <AboveFold>
             <Img fluid={data.avatarHomepage.childImageSharp.fluid} alt="Name Surname" className="avatar" />
             <t.H1 primary align="center">
-              Name Surname
+              Kelechi Ogbonna
             </t.H1>
             <t.LargeP align="center" max45>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Software Engineer
             </t.LargeP>
             <HireMe large onClick={this.openContactPopup} book>
               Hire me
@@ -157,10 +160,10 @@ class Homepage extends React.Component {
           </AboveFold>
           <Content>
             <t.H2 primary align="center" bold>
-              Lorem ipsum
+              Hi there,
             </t.H2>
             <t.P align="center" max70 className="who-desc">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              I'm a full stack web engineer with top focus on Front End Technologies
             </t.P>
             <t.H2 primary align="center" bold className="portfolio">
               Portfolio
@@ -169,15 +172,18 @@ class Homepage extends React.Component {
           <Block>
             <BlockContent>
               <DivWrapper>
-                <ItemImage src={Placeholder} alt="Placeholder title" />
+                <ItemImage src={BeFit} alt="BeFit workout tracker" />
               </DivWrapper>
               <DivWrapper>
-                <t.H2 bold>Placeholder website</t.H2>
-                <t.P>Lorem ipsum</t.P>
-                <t.P>Dolor sit amet</t.P>
-                <LinkButton primary bold className="link" as="a"
-                  target="_blank"
-                  href="#">
+                <t.H2 bold>BeFit Workout Tracker</t.H2>
+                <t.P>
+                  A full-stack production-ready web application that helps users track workouts, follow instructional
+                  videos, and create custom workouts from over 850 exercises <br />
+                </t.P>
+                <t.P>
+                  Built with: React, Redux, Netlify, Git, Ant-Design System, Jest, TravisCI, Postgres (Knex) and Node
+                </t.P>
+                <LinkButton primary bold className="link" as="a" target="_blank" href="https://www.befittracker.com">
                   Lorem ipsum
                 </LinkButton>
               </DivWrapper>
@@ -186,32 +192,43 @@ class Homepage extends React.Component {
           <Block>
             <BlockContent>
               <DivWrapper>
-                <t.H2 bold>Placeholder website</t.H2>
-                <t.P>Lorem ipsum</t.P>
-                <t.P>Dolor sit amet</t.P>
-                <LinkButton primary bold className="link" as="a"
+                <t.H2 bold>Politico</t.H2>
+                <t.P>
+                  Politico is an online voting platform that lets users vote for candidates running for different
+                  political offices. Politico enables citizens give their mandate to politicians running for different
+                  government offices.
+                </t.P>
+                <t.P>Built with: HTML, CSS, Javascript, GIT, Heroku, TravisCI, Postgres and Node</t.P>
+                <LinkButton
+                  primary
+                  bold
+                  className="link"
+                  as="a"
                   target="_blank"
-                  href="#">
+                  href="https://politico-kell.herokuapp.com/"
+                >
                   Lorem ipsum
                 </LinkButton>
               </DivWrapper>
               <DivWrapper>
-                <ItemImage src={Placeholder} alt="Placeholder title" />
+                <ItemImage src={politico} alt="Politico" />
               </DivWrapper>
             </BlockContent>
           </Block>
           <Block>
             <BlockContent>
               <DivWrapper>
-                <ItemImage src={Placeholder} alt="Placeholder title" />
+                <ItemImage src={ceplanner} alt="ceplanner" />
               </DivWrapper>
               <DivWrapper>
-                <t.H2 bold>Placeholder website</t.H2>
-                <t.P>Lorem ipsum</t.P>
-                <t.P>Dolor sit amet</t.P>
-                <LinkButton primary bold className="link" as="a"
-                  target="_blank"
-                  href="#">
+                <t.H2 bold>Corporate Event Planner</t.H2>
+                <t.P>
+                  Corporate Event Planner is a web application that makes planning your events easy, efficient and
+                  successful It helps you organize and keep track of your events and also let's you collaborate with
+                  people to have a successful event.
+                </t.P>
+                <t.P> Built with: HTML, CSS, Javascript</t.P>
+                <LinkButton primary bold className="link" as="a" target="_blank" href="https://ceplanner.netlify.com/">
                   Lorem ipsum
                 </LinkButton>
               </DivWrapper>
@@ -220,25 +237,31 @@ class Homepage extends React.Component {
           <Block>
             <BlockContent>
               <DivWrapper>
-                <t.H2 bold>Placeholder website</t.H2>
-                <t.P>Lorem ipsum</t.P>
-                <t.P>Dolor sit amet</t.P>
-                <LinkButton primary bold className="link" as="a"
+                <t.H2 bold>Send-IT</t.H2>
+                <t.P>
+                  SendIT is a courier service that helps users deliver parcels to different destinations. SendIT
+                  provides courier quotes on weight categories.
+                </t.P>
+                <t.P>Built with: HTML, CSS, Javascript, GIT, Heroku, TravisCI, Postgres and Node</t.P>
+                <LinkButton
+                  primary
+                  bold
+                  className="link"
+                  as="a"
                   target="_blank"
-                  href="#">
+                  href="https://kellswork.github.io/SendIT/"
+                >
                   Lorem ipsum
                 </LinkButton>
               </DivWrapper>
               <DivWrapper>
-                <ItemImage src={Placeholder} alt="Placeholder title" />
+                <ItemImage src={sendit} alt="Send-IT" />
               </DivWrapper>
             </BlockContent>
           </Block>
           <WorkWithMe>
             <t.H1 green>Get in touch with me</t.H1>
-            <t.LargeP>
-              Fancy working with me? Contact me for more info!{' '}
-            </t.LargeP>
+            <t.LargeP>Fancy working with me? Contact me for more info! </t.LargeP>
             <HireMe onClick={this.openContactPopup} book>
               Contact me
             </HireMe>
