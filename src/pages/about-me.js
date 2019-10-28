@@ -88,13 +88,12 @@ class AboutMe extends React.Component {
               Kelechi Ogbonna - About Me
             </t.H1>
             <t.LargeP align="center" max70>
-              I enjoy the challenge that come with fixing bugs and looking for a solution to a problem someone needs.
-              Programing is a mind game I will continue to indulge in. Building software technologies and buildoing the
-              web is a pasiion I do not think i will be looing anytime soon. With a great love for working in diverse
-              team, building relationship s with fellow tema members, collaborating and communicating effectively while
-              mutally respecting each other is the part I always look for to. When not being an awesome engineer, you
-              can find me listening to music why reading a book on self motivation aor attending tech conferences to
-              meet and hear form great minds
+              I enjoy the challenge that comes with fixing bugs and looking for a solution to a problem or a need.
+              Programing is a mind game I will continue to indulge in. Building software technologies and building for
+              the web is a passion I do not think I will be losing any time soon. With great love for working in diverse
+              teams, building relationships with fellow team members, collaborating and communicating effectively while
+              mutually respecting each other is the part I always look forward too. When not being an awesome engineer,
+              you can find me listening to music, attending tech conferences, meeting and hearing from great minds.
             </t.LargeP>
           </AboveFold>
           <Content>

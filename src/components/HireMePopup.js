@@ -59,10 +59,7 @@ const Burger = styled.div`
   z-index: 2;
   color: ${props => props.scrolled && Colors.darkest};
   &:hover {
-    ${props =>
-      props.scrolled || props.theme === 'white'
-        ? lighten(0.3, Colors.darkest)
-        : darken(0.1, Colors.white)};
+    ${props => (props.scrolled || props.theme === 'white' ? lighten(0.3, Colors.darkest) : darken(0.1, Colors.white))};
     cursor: pointer;
     opacity: 0.9;
   }
@@ -90,9 +87,7 @@ class HireMePopup extends React.Component {
             <img alt="Close popup" src={Close} />
           </Burger>
           <t.H3>Contact me on</t.H3>
-          <Link primary bold
-            target="_blank"
-            href="https://www.linkedin.com/">
+          <Link primary bold target="_blank" href="https://www.linkedin.com/in/kelechi-ogbonna/">
             <img src={LN} alt="Your Linkedin profile" />
           </Link>
         </ContentWrapper>

@@ -152,7 +152,7 @@ class Homepage extends React.Component {
               Kelechi Ogbonna
             </t.H1>
             <t.LargeP align="center" max45>
-              Software Engineer
+              A full stack web engineer with top focus on Front End Technologies
             </t.LargeP>
             <HireMe large onClick={this.openContactPopup} book>
               Hire me
@@ -162,9 +162,7 @@ class Homepage extends React.Component {
             <t.H2 primary align="center" bold>
               Hi there,
             </t.H2>
-            <t.P align="center" max70 className="who-desc">
-              I'm a full stack web engineer with top focus on Front End Technologies
-            </t.P>
+            <t.P align="center" max70 className="who-desc" />
             <t.H2 primary align="center" bold className="portfolio">
               Portfolio
             </t.H2>
@@ -261,7 +259,7 @@ class Homepage extends React.Component {
           </Block>
           <WorkWithMe>
             <t.H1 green>Get in touch with me</t.H1>
-            <t.LargeP>Fancy working with me? Contact me for more info! </t.LargeP>
+            <t.LargeP>I would love to here from you!</t.LargeP>
             <HireMe onClick={this.openContactPopup} book>
               Contact me
             </HireMe>
