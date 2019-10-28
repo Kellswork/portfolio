@@ -159,9 +159,9 @@ class Homepage extends React.Component {
             </HireMe>
           </AboveFold>
           <Content>
-            <t.H2 primary align="center" bold>
+            {/* <t.H2 primary align="center" bold>
               Hi there,
-            </t.H2>
+            </t.H2> */}
             <t.P align="center" max70 className="who-desc" />
             <t.H2 primary align="center" bold className="portfolio">
               Portfolio
