@@ -6,6 +6,7 @@ import Layout, { Content } from '../components/Layout';
 import BeFit from '../images/befit.png';
 import politico from '../images/politico.png';
 import sendit from '../images/sendit.png';
+import RAG from '../images/RAG.png';
 import ceplanner from '../images/ceplanner.png';
 import { HireMe, LinkButton } from '../components/Button.js';
 import HireMePopup from '../components/HireMePopup.js';
@@ -123,6 +124,13 @@ const WorkWithMe = styled.div`
   `};
 `;
 
+const Divlink = styled.div`
+  a {
+    color: rgba(0, 0, 0, 0.8);
+    margin-right: 20px;
+  }
+`;
+
 class Homepage extends React.Component {
   state = {
     openHireMePopup: false
@@ -140,6 +148,10 @@ class Homepage extends React.Component {
     });
   };
 
+  openEmailClient = () => {
+    window.location.href = `mailto:kellogbonna@gmail.com`;
+  };
+
   render() {
     const { openHireMePopup } = this.state;
     const { data } = this.props;
@@ -154,7 +166,7 @@ class Homepage extends React.Component {
             <t.LargeP align="center" max45>
               A full stack web engineer with top focus on Front End Technologies
             </t.LargeP>
-            <HireMe large onClick={this.openContactPopup} book>
+            <HireMe large onClick={this.openEmailClient} book>
               Hire me
             </HireMe>
           </AboveFold>
@@ -164,7 +176,7 @@ class Homepage extends React.Component {
             </t.H2> */}
             <t.P align="center" max70 className="who-desc" />
             <t.H2 primary align="center" bold className="portfolio">
-              Portfolio
+              Projects
             </t.H2>
           </Content>
           <Block>
@@ -181,9 +193,17 @@ class Homepage extends React.Component {
                 <t.P>
                   Built with: React, Redux, Netlify, Git, Ant-Design System, Jest, TravisCI, Postgres (Knex) and Node
                 </t.P>
-                <LinkButton primary bold className="link" as="a" target="_blank" href="https://www.befittracker.com">
-                  Learn more
-                </LinkButton>
+                {/* <LinkButton primary bold className="link" as="a" target="_blank" href="https://www.befittracker.com"> */}
+                {/* <span > */}
+                <Divlink>
+                  <a href="https://www.befittracker.com" target="_blank" rel="noopener noreferrer">
+                    <i className="fas fa-link fa-2x" />
+                  </a>
+
+                  <a href="https://github.com/labseu2-workout-tracker" target="_blank" rel="noopener noreferrer">
+                    <i className="fab fa-github fa-2x" />
+                  </a>
+                </Divlink>
               </DivWrapper>
             </BlockContent>
           </Block>
@@ -197,16 +217,16 @@ class Homepage extends React.Component {
                   government offices.
                 </t.P>
                 <t.P>Built with: HTML, CSS, Javascript, GIT, Heroku, TravisCI, Postgres and Node</t.P>
-                <LinkButton
-                  primary
-                  bold
-                  className="link"
-                  as="a"
-                  target="_blank"
-                  href="https://politico-kell.herokuapp.com/"
-                >
-                  Learn more
-                </LinkButton>
+
+                <Divlink>
+                  <a href="https://politico-kell.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                    <i className="fas fa-link fa-2x" />
+                  </a>
+
+                  <a href="https://github.com/Kellswork/Politico" target="_blank" rel="noopener noreferrer">
+                    <i className="fab fa-github fa-2x" />
+                  </a>
+                </Divlink>
               </DivWrapper>
               <DivWrapper>
                 <ItemImage src={politico} alt="Politico" />
@@ -226,40 +246,82 @@ class Homepage extends React.Component {
                   people to have a successful event.
                 </t.P>
                 <t.P> Built with: HTML, CSS, Javascript</t.P>
-                <LinkButton primary bold className="link" as="a" target="_blank" href="https://ceplanner.netlify.com/">
-                  Learn more
-                </LinkButton>
+                <Divlink>
+                  <a href="https://ceplanner.netlify.com/" target="_blank" rel="noopener noreferrer">
+                    <i className="fas fa-link fa-2x" />
+                  </a>
+
+                  <a
+                    href="https://github.com/Kellswork/corporate-event-planner"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fab fa-github fa-2x" />
+                  </a>
+                </Divlink>
               </DivWrapper>
             </BlockContent>
           </Block>
           <Block>
             <BlockContent>
               <DivWrapper>
-                <t.H2 bold>Send-IT</t.H2>
+                <t.H2 bold>Random Acts Generator</t.H2>
+                <t.P>
+                  Random Acts Generator is an app that reminds users to perform an act of service to someone on their
+                  contact list and also provides ideas for the user to perform in situations where they can’t come up
+                  with one.
+                </t.P>
+                <t.P>Built with: HTML, CSS, React, styled-components, GIT, Heroku, TravisCI, Postgres and Node</t.P>
+                <Divlink>
+                  <a href="https://suspicious-bohr-8308ad.netlify.com/" target="_blank" rel="noopener noreferrer">
+                    <i className="fas fa-link fa-2x" />
+                  </a>
+
+                  <a
+                    href="https://github.com/random-acts-generator-eu/rag-frontend"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fab fa-github fa-2x" />
+                  </a>
+                </Divlink>
+              </DivWrapper>
+              <DivWrapper>
+                <ItemImage src={RAG} alt="Random Act generator" />
+              </DivWrapper>
+            </BlockContent>
+          </Block>
+          <Block>
+            <BlockContent>
+              <DivWrapper>
+                <ItemImage src={sendit} alt="Send-IT" />
+              </DivWrapper>
+              <DivWrapper>
+                <t.H2 bold>SendIT</t.H2>
                 <t.P>
                   SendIT is a courier service that helps users deliver parcels to different destinations. SendIT
                   provides courier quotes on weight categories.
                 </t.P>
                 <t.P>Built with: HTML, CSS, Javascript, GIT, Heroku, TravisCI, Postgres and Node</t.P>
-                <LinkButton
-                  primary
-                  bold
-                  className="link"
-                  as="a"
-                  target="_blank"
-                  href="https://kellswork.github.io/SendIT/"
-                >
-                  Learn more
-                </LinkButton>
-              </DivWrapper>
-              <DivWrapper>
-                <ItemImage src={sendit} alt="Send-IT" />
+                <Divlink>
+                  <a href="https://kellswork.github.io/SendIT/" target="_blank" rel="noopener noreferrer">
+                    <i className="fas fa-link fa-2x" />
+                  </a>
+
+                  <a
+                    href="https://github.com/Kellswork/SendIT"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fab fa-github fa-2x" />
+                  </a>
+                </Divlink>
               </DivWrapper>
             </BlockContent>
           </Block>
           <WorkWithMe>
             <t.H1 green>Get in touch with me</t.H1>
-            <t.LargeP>I would love to here from you!</t.LargeP>
+            <t.LargeP>I would love to hear from you!</t.LargeP>
             <HireMe onClick={this.openContactPopup} book>
               Contact me
             </HireMe>

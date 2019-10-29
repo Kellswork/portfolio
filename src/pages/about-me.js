@@ -27,7 +27,7 @@ const AboutMeWrapper = styled.div`
     margin-bottom: 60px;
   }
   ${t.LargeP} {
-    margin-bottom: 28px;
+    margin-bottom: 15px;
   }
   .background {
     position: absolute;
@@ -52,9 +52,9 @@ const AboutMeWrapper = styled.div`
   .avatar {
     max-width: 400px;
     width: 80%;
-    height: 400px;
+    height: 500px;
     margin: 0 auto 100px auto;
-    border-radius: 50%;
+    border-radius: 3%;
     display: block;
     ${media.tablet`max-width: 70%;`}
   }
@@ -97,7 +97,7 @@ class AboutMe extends React.Component {
             </t.LargeP>
           </AboveFold>
           <Content>
-            <Img fluid={data.avatarAbout.childImageSharp.fluid} alt="Name Surname" className="avatar" />
+            <Img fluid={data.avatarAbout.childImageSharp.fluid}  alt="Kelechi Ogbonna" className="avatar" />
           </Content>
         </Layout>
         <HireMePopup open={openHireMePopup} handleClose={this.handleRequestDemoClose} />
@@ -110,7 +110,7 @@ export default AboutMe;
 
 export const pageQuery = graphql`
   query {
-    avatarAbout: file(relativePath: { eq: "avatar.jpg" }) {
+    avatarAbout: file(relativePath: { eq: "about-kells.jpg" }) {
       ...fluidImage
     }
   }
