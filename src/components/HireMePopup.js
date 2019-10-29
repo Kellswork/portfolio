@@ -3,7 +3,9 @@ import styled from 'styled-components';
 import { lighten, darken } from 'polished';
 import * as t from '../Typography';
 import Colors from '../Colors';
-import LN from '../images/ln.png';
+import LN from '../images/linkedIn.png';
+import GM from '../images/gmail.png';
+import GH from '../images/github.jpg';
 import Close from '../images/close-popup-grey.png';
 import { media } from '../MediaQueries';
 import Helmet from 'react-helmet';
@@ -29,9 +31,18 @@ const HireMePopupWrapper = styled.div`
   `};
 `;
 
+const Divlink = styled.div`
+ display: flex;
+ flex: row;
+ flex-wrap: wrap;
+ font-size: 16px;
+`;
 const Link = styled.a`
   font-size: 18px;
-  padding: 16px 50px;
+  img {
+    width: 150px;
+    height: 130px;
+  }
 `;
 
 const ContentWrapper = styled.div`
@@ -87,9 +98,17 @@ class HireMePopup extends React.Component {
             <img alt="Close popup" src={Close} />
           </Burger>
           <t.H3>Contact me on</t.H3>
-          <Link primary bold target="_blank" href="https://www.linkedin.com/in/kelechi-ogbonna/">
-            <img src={LN} alt="Your Linkedin profile" />
-          </Link>
+          <Divlink>
+            <Link primary bold target="_blank" href="https://www.linkedin.com/in/kelechi-ogbonna/">
+              <img src={LN} alt="LinkedIn profile" />
+            </Link>
+            <Link primary bold target="_blank" href="mailto:kellogbonna@gmail.com">
+              <img src={GM} alt="gmail address" />
+            </Link>
+            <Link primary bold target="_blank" href="https://www.github.com/kellswork">
+              <img src={GH} alt="Your Linkedin profile" />
+            </Link>
+          </Divlink>
         </ContentWrapper>
       </HireMePopupWrapper>
     );

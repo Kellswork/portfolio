@@ -157,7 +157,7 @@ class Homepage extends React.Component {
     const { data } = this.props;
     return (
       <HomepageWrapper>
-        <Layout theme="white" bigFooter openContactPopup={this.openEmailClient}>
+        <Layout theme="white" bigFooter openContactPopup={this.openContactPopup}>
           <AboveFold>
             <Img fluid={data.avatarHomepage.childImageSharp.fluid} alt="Name Surname" className="avatar" />
             <t.H1 primary align="center">
@@ -197,11 +197,11 @@ class Homepage extends React.Component {
                 {/* <span > */}
                 <Divlink>
                   <a href="https://www.befittracker.com" target="_blank" rel="noopener noreferrer">
-                    <i class="fas fa-link fa-2x" />
+                    <i className="fas fa-link fa-2x" />
                   </a>
 
                   <a href="https://github.com/labseu2-workout-tracker" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-github fa-2x" />
+                    <i className="fab fa-github fa-2x" />
                   </a>
                 </Divlink>
               </DivWrapper>
@@ -220,11 +220,11 @@ class Homepage extends React.Component {
 
                 <Divlink>
                   <a href="https://politico-kell.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-                    <i class="fas fa-link fa-2x" />
+                    <i className="fas fa-link fa-2x" />
                   </a>
 
                   <a href="https://github.com/Kellswork/Politico" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-github fa-2x" />
+                    <i className="fab fa-github fa-2x" />
                   </a>
                 </Divlink>
               </DivWrapper>
@@ -248,7 +248,7 @@ class Homepage extends React.Component {
                 <t.P> Built with: HTML, CSS, Javascript</t.P>
                 <Divlink>
                   <a href="https://ceplanner.netlify.com/" target="_blank" rel="noopener noreferrer">
-                    <i class="fas fa-link fa-2x" />
+                    <i className="fas fa-link fa-2x" />
                   </a>
 
                   <a
@@ -256,7 +256,7 @@ class Homepage extends React.Component {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i class="fab fa-github fa-2x" />
+                    <i className="fab fa-github fa-2x" />
                   </a>
                 </Divlink>
               </DivWrapper>
@@ -274,7 +274,7 @@ class Homepage extends React.Component {
                 <t.P>Built with: HTML, CSS, React, styled-components, GIT, Heroku, TravisCI, Postgres and Node</t.P>
                 <Divlink>
                   <a href="https://suspicious-bohr-8308ad.netlify.com/" target="_blank" rel="noopener noreferrer">
-                    <i class="fas fa-link fa-2x" />
+                    <i className="fas fa-link fa-2x" />
                   </a>
 
                   <a
@@ -282,7 +282,7 @@ class Homepage extends React.Component {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i class="fab fa-github fa-2x" />
+                    <i className="fab fa-github fa-2x" />
                   </a>
                 </Divlink>
               </DivWrapper>
@@ -305,7 +305,7 @@ class Homepage extends React.Component {
                 <t.P>Built with: HTML, CSS, Javascript, GIT, Heroku, TravisCI, Postgres and Node</t.P>
                 <Divlink>
                   <a href="https://kellswork.github.io/SendIT/" target="_blank" rel="noopener noreferrer">
-                    <i class="fas fa-link fa-2x" />
+                    <i className="fas fa-link fa-2x" />
                   </a>
 
                   <a
@@ -313,7 +313,7 @@ class Homepage extends React.Component {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i class="fab fa-github fa-2x" />
+                    <i className="fab fa-github fa-2x" />
                   </a>
                 </Divlink>
               </DivWrapper>
