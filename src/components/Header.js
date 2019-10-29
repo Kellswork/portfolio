@@ -239,8 +239,9 @@ class Header extends React.Component {
                   <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
                 </filter>
                 <linearGradient id="paint0_linear" x1="31.5" y1="-21" x2="31.5" y2="55" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#9922F7" />
-                  <stop offset="0.338542" stop-color="#E338E7" />
+                  <stop offset="0.108632" stop-color="#9922F7" />
+                  <stop offset="0.259725" stop-color="#6B138E" />
+                  <stop offset="0.407384" stop-color="#E338E7" />
                   <stop offset="0.640625" stop-color="#B32170" stop-opacity="0.74" />
                   <stop offset="0.984375" stop-color="#C6101B" stop-opacity="0.67" />
                 </linearGradient>
