@@ -16,14 +16,7 @@ export const LayoutWrapper = styled.div`
   position: relative;
 `;
 
-const Layout = ({
-  children,
-  theme,
-  bigFooter,
-  mediumFooter,
-  openContactPopup
-  
-}) => (
+const Layout = ({ children, theme, bigFooter, mediumFooter, openContactPopup }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -42,21 +35,17 @@ const Layout = ({
           meta={[
             {
               name: 'description',
-              content:
-                'Portfolio built using Gatsby and React'
+              content: 'Portfolio built using Gatsby and React'
             },
             { name: 'keywords', content: 'portfolio' }
           ]}
         >
           <html lang="en" />
+          <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet" />
         </Helmet>
         <Header theme={theme} openContactPopup={openContactPopup} />
         <LayoutWrapper>{children}</LayoutWrapper>
-        <Footer
-          big={bigFooter}
-          medium={mediumFooter}
-          openContactPopup={openContactPopup}
-        />
+        <Footer big={bigFooter} medium={mediumFooter} openContactPopup={openContactPopup} />
       </>
     )}
   />
