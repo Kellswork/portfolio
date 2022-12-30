@@ -5,7 +5,7 @@
   "author": "Kelechi Ogbonna <kellogbonna@gmail.com>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.8.0",
-    "gatsby": "^2.0.40",
+    "gatsby": "^2.32.13",
     "gatsby-image": "^2.0.20",
     "gatsby-plugin-manifest": "^2.0.7",
     "gatsby-plugin-offline": "^2.0.12",
